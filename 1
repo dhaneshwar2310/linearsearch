@@ -1,0 +1,22 @@
+#//get array
+#//get N is the length of the array
+#//traverse till it finds the x
+#//x is the key
+def search(arr,N,x):
+    for i in range(0,N):
+        if(arr[i]==x):
+            return i
+    return -1
+if __name__ == "__main__":
+    arr=[]
+    n=int(input(" _len_"))
+    for i in range(0, n):
+        ele = int(input())
+        arr.append(ele)
+    x=int(input("boss x "))
+    N=len(arr)
+    res=search(arr,N,x)
+    if(res==-1):
+        print("nope")
+    else:
+        print(res)
